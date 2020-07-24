@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Touch-The-Nums</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+    <h1 class="main-head"> Touch-Nums </h1>
+    <div class="main-nav" onclick="toChooseLevel()">New Game</div>
+    <h1 class="levels-head">SELECT DIFFICULTY LEVEL</h1>
+    <div class="level-nav">
+        <div class="easy-level level" onclick="moveToGame(3)">Easy</div>
+        <div class="normal-level level" onclick="moveToGame(4)">Normal</div>
+        <div class="hard-level level" onclick="moveToGame(5)">Hard</div>
+        <div class="extreme-level level" onclick="moveToGame(6)">Extreme</div>
+    </div>
+    <div class="mat-container">
+        <div class="time">
+            <h1 class="timerHead">Time:</h1>
+            <div class="timer">
+                <span class="clock">00:000</span>
+            </div>
+        </div>
+        <div>
+            <table>
+                <tbody class="board">
+                </tbody>
+            </table>
+        </div>
+        <div class="buttons">
+            <div class="change-level level button" onclick="changeDifficulty()">Change Difficulty</div>
+            <div class="Start-Over level button" onclick="startOver()">Start Over</div>
+        </div>
+    </div>
+    <div class="victory"></div>
+
+    <div class="instructions">You need to press each number in ascending order </br>AS FAST AS YOU
+        CAN! </br> Ready?
+        <div class="start-game level" onclick="startGame()">start playing</div>
+    </div>
+
+    <script src="js/theGame.js"></script>
+
+</body>
+
+</html>

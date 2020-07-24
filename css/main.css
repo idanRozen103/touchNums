@@ -1,0 +1,212 @@
+body {
+background-image: url("../img/bcg.jpg");
+background-size: cover;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 0px 0px 15px #ff00d4;
+    color: rgb(238, 238, 255);
+    text-align: center;
+    margin: 30px;
+}
+
+.main-head {
+    visibility: visible;
+}
+
+.main-nav{
+    visibility: visible;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 70px;
+    margin: 15% auto;
+    width: 400px;
+    height: 70px;
+    color: rgb(238, 202, 236);
+    border: 2px solid rgb(255, 0, 212);
+    border-radius: 11px;
+    background: repeating-radial-gradient( rgb(97, 16, 90), rgb(0, 0, 0));
+    cursor: pointer;
+
+}
+
+.main-nav:hover{
+    border-color: skyblue;
+    box-shadow: 0px 0px 40px 30px rgba(79, 138, 146, 0.2), 0px 13px 19px 2px rgba(151, 185, 185, 0.14), 0px 5px 24px 4px rgba(255, 255, 255, 0.12);
+    background: repeating-radial-gradient( rgb(12, 65, 90), rgb(0, 0, 0));
+}
+
+.levels-head{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    margin-left: 23%;
+}
+
+.level-nav {
+    visibility: hidden;
+    position: absolute;
+    top: 17%;
+    margin-left: 18%;
+    border:2px solid purple;
+    border-radius: 5% ;
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1..5fr ;
+    grid-gap: -20em;
+    color: purple;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 70px;
+    height: 450px;
+    width: 900px;
+    padding: 20px;
+}
+
+.level {
+    width: 500px;
+    margin: auto auto;
+    color: rgb(238, 202, 236);
+    border: 2px solid rgb(255, 0, 212);
+    border-radius: 9px;
+    background: repeating-radial-gradient( rgb(97, 16, 90), rgb(0, 0, 0));
+    cursor: pointer;
+}
+
+.level:hover{
+    border-color: skyblue;
+    box-shadow: 0px 0px 40px 30px rgba(79, 138, 146, 0.2), 0px 13px 19px 2px rgba(151, 185, 185, 0.14), 0px 5px 24px 4px rgba(255, 255, 255, 0.12);
+    background: repeating-radial-gradient( rgb(12, 65, 90), rgb(0, 0, 0));
+}
+
+a {
+color: rgb(238, 202, 236);
+text-decoration: underline;
+}
+
+.instructions {
+    visibility: hidden;
+    opacity: 98%;
+    display: grid;
+    position: absolute;
+    top: 0;
+    margin: 7% 20%;
+    border:2px solid purple;
+    border-radius: 5% ;
+    color: rgb(238, 226, 238);
+    background: repeating-radial-gradient( rgb(82, 4, 71), rgb(0, 0, 0));
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 90px;
+    height: 430px;
+    width: 850px;
+    padding: 30px;
+    box-shadow: 0px 0px 40px 30px rgba(79, 138, 146, 0.2), 0px 13px 19px 2px rgba(151, 185, 185, 0.14), 0px 5px 24px 4px rgba(255, 255, 255, 0.12);
+}
+
+.time {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    border: 2px solid rgb(255, 0, 212);
+    border-radius: 11px; 
+    width: 38%;
+
+}
+
+.timerHead {
+    font-size: 40px;
+    margin: 5px;
+}
+
+.timer{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.start-game {
+    position: relative;
+    bottom: 0;
+    width: 300px;
+    line-height: 70px;
+    letter-spacing: 4px;
+}
+
+.mat-container {
+    display: grid;
+    margin: 0 auto;
+    width: 600px;
+    display: grid;
+}
+
+table {
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    top: 15%;
+    font-size: 40px;
+    width: 38%;
+    height: 60%;
+    padding: 0.1em;
+    border: 2px solid rgb(226, 4, 193);
+    border-radius: 10px;
+}
+
+td {
+    padding: 5px 20px;
+    border: 2px solid rgb(138, 1, 138);   
+    border-radius: 9%;
+    cursor: pointer;
+    background: repeating-radial-gradient( rgb(61, 36, 58), rgb(0, 0, 0));
+}
+
+td:hover {
+    background: repeating-radial-gradient( rgb(37, 105, 134), rgb(0, 0, 0));
+    }
+
+.buttons{
+    visibility: hidden;
+    padding: 10px;  
+    text-align: center;
+    display: grid;
+    font-size: 25px;
+    bottom: 30px;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 25px;
+    position: absolute;
+    margin-left: 0;
+    line-height: 60px;
+    letter-spacing: 2px;
+    }
+
+.button{
+    width: 270px;
+    justify-items: center; }
+
+.victory {
+    visibility: hidden;
+    top: 18%;
+    margin-left: 28%;
+    opacity: 98%;
+    position: absolute;
+    border:2px solid rgb(27, 47, 156);
+    border-radius: 5% ;
+    color: rgb(238, 226, 238);
+    background: repeating-radial-gradient( rgb(37, 105, 134), rgb(0, 0, 0));
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    height: 200px;
+    width: 600px;
+    padding: 30px;
+    box-shadow: 0px 0px 40px 30px rgba(79, 138, 146, 0.2), 0px 13px 19px 2px rgba(151, 185, 185, 0.14), 0px 5px 24px 4px rgba(255, 255, 255, 0.12);
+
+}
